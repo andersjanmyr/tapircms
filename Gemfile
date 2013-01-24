@@ -25,6 +25,7 @@ group :development do
   gem 'rb-fsevent'
   gem 'guard-ctags-bundler'
   gem 'guard-rspec'
+  gem 'rails_best_practices'
 end
 
 group :development, :test do
