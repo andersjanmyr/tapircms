@@ -194,25 +194,25 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (>= 0.3.2)
-  binding_of_caller (>= 0.6.8)
+  better_errors
+  binding_of_caller
   cancan (>= 1.6.8)
-  capybara (>= 2.0.2)
+  capybara
   coffee-rails (~> 3.2.1)
-  database_cleaner (>= 0.9.1)
+  database_cleaner
   devise (>= 2.2.2)
-  email_spec (>= 1.4.0)
-  factory_girl_rails (>= 4.1.0)
+  email_spec
+  factory_girl_rails
   figaro (>= 0.5.3)
   jquery-rails
-  mongoid (>= 3.0.18)
-  mongoid-rspec (>= 1.5.6)
-  quiet_assets (>= 1.0.1)
+  mongoid
+  mongoid-rspec
+  quiet_assets
   rails (= 3.2.11)
   rolify (>= 3.2.0)
-  rspec-rails (>= 2.12.2)
+  rspec-rails
   sass-rails (~> 3.2.3)
   sendgrid (>= 1.0.1)
   simple_form (>= 2.0.4)
   uglifier (>= 1.0.3)
-  unicorn (>= 4.3.1)
+  unicorn
