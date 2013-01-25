@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Page:</b>
+  <%= @page_entry.page %>
+</p>
+
+<p>
+  <b>Block:</b>
+  <%= @page_entry.block %>
+</p>
+
+<p>
+  <b>Feed:</b>
+  <%= @page_entry.feed %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_entry_path(@page_entry) %> |
+<%= link_to 'Back', page_entries_path %>

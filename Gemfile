@@ -17,6 +17,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'figaro'
 gem 'inherited_resources'
+gem 'acts_as_list_mongoid'
 
 group :development do
   gem 'quiet_assets'

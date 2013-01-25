@@ -1,4 +1,10 @@
 Tapir::Application.routes.draw do
+  resources :page_entries
+
+
+  resources :pages
+
+
   devise_for :users
 
   resources :frames

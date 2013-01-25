@@ -1,0 +1,2 @@
+module PageEntriesHelper
+end

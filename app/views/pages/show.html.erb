@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @page.name %>
+</p>
+
+<p>
+  <b>Slug:</b>
+  <%= @page.slug %>
+</p>
+
+<p>
+  <b>Frame:</b>
+  <%= @page.frame %>
+</p>
+
+<p>
+  <b>Feeds:</b>
+  <%= @page.feeds %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
