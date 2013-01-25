@@ -1,3 +1,3 @@
-Oredev::Application.routes.draw do
+Tapir::Application.routes.draw do
   devise_for :users
 end
