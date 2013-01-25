@@ -16,6 +16,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'simple_form'
 gem 'figaro'
+gem 'inherited_resources'
 
 group :development do
   gem 'quiet_assets'
