@@ -4,6 +4,7 @@ Tapir::Application.routes.draw do
   resources :frames
   resources :blocks
   resources :puffs
+  resources :feeds
 
   get "home/index"
 

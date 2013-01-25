@@ -22,11 +22,12 @@ module Tapir
     config.generators do |g|
 
       g.test_framework :rspec, fixture: true
-      g.fixture_replacement :factory_girl
-
+      g.fixture_replacement :fabrication
 
       g.view_specs false
       g.helper_specs false
+      g.stylesheets = false
+      g.javascripts = false
     end
 
     # Settings in config/environments/* take precedence over those specified here.
