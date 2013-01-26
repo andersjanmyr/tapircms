@@ -22,4 +22,8 @@ describe Article do
   it 'has a source' do
     expect(article.source).to be
   end
+
+  it 'has an array of images ' do
+    expect(article.images).to have(2).items
+  end
 end

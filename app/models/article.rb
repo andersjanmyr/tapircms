@@ -5,4 +5,5 @@ class Article
   field :content, type: String
   field :source, type: String
   field :uri, type: String
+  field :images, type: Array
 end
