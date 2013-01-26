@@ -1,16 +1,12 @@
 Tapir::Application.routes.draw do
-  resources :page_entries
-
-
-  resources :pages
-
-
   devise_for :users
-
   resources :frames
   resources :blocks
   resources :puffs
   resources :feeds
+  resources :pages
+  resources :page_entries
+  resources :articles
 
   get "home/index"
 
