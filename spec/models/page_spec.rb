@@ -3,8 +3,12 @@ require 'spec_helper'
 describe Page do
   let(:page) { Fabricate.build(:page) }
 
-  it 'has a name' do
-    expect(page.name).to be
+  it 'has a title' do
+    expect(page.title).to be
+  end
+
+  it 'has a description' do
+    expect(page.description).to be
   end
 
   it 'has a slug' do

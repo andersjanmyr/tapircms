@@ -1,4 +1,5 @@
 Tapir::Application.routes.draw do
+
   devise_for :users
   resources :frames
   resources :blocks
@@ -9,6 +10,8 @@ Tapir::Application.routes.draw do
   resources :articles
 
   get "home/index"
+  get "sites/index"
 
   root to: 'home#index'
+
 end

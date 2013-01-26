@@ -1,4 +1,5 @@
 Fabricator(:page) do
-  name { sequence(:name) }
+  title { sequence(:title) }
+  description { sequence(:description) }
   slug { sequence(:slug) }
 end
