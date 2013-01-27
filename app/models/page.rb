@@ -7,10 +7,11 @@ class Page
   embeds_many :entries, class_name: 'PageEntry'
 
   def partial
-    "/sites/frames/#{frame.template}.html"
+    "/sites/frames/#{frame.template}"
   end
 
   def blocks
     entries
   end
+
 end

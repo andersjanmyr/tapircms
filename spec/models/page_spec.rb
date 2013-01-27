@@ -34,7 +34,7 @@ describe Page do
 
    it 'returns the frame.template as a partial' do
      page = Page.new(frame: frame)
-     expect(page.partial).to eq('/sites/frames/default.html')
+     expect(page.partial).to eq('/sites/frames/default')
    end
  end
 end

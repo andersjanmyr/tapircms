@@ -10,7 +10,7 @@ describe "Sites" do
   end
 
   let!(:page) do
-    Page.create!(name: 'Tapir', description: 'Tapir Desc')
+    Page.create!(name: 'Tapir', description: 'Tapir Desc', frame: frame)
   end
   describe "GET /sites" do
     it "works! (now write some real specs)" do

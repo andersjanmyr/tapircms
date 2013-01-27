@@ -1,9 +1,9 @@
-<div id="container" class="container">
+<div class="frame <%=page.frame.name%>">
   <header>
   </header>
-  <div id="main" role="main">
-    <%= render page.blocks %>
+  <div class='blocks'>
+    <%= render_blocks(page.blocks) %>
   </div>
   <footer>
   </footer>
-</div> <!--! end of #container -->
+</div>
