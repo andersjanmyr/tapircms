@@ -1,3 +1,3 @@
 Fabricator(:site) do
-  name        ""
+  name 'Site'
 end
