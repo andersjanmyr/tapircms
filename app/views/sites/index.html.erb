@@ -3,12 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= page.title %></title>
-    <meta name="description" content="<%= @page.description %>">
+    <meta name="description" content="<%= page.description %>">
     <%= stylesheet_link_tag site.stylesheet, :media => "all" %>
     <%= javascript_include_tag site.javascript %>
     <%= csrf_meta_tags %>
     </head>
     <body class="<%= site.theme %>">
-    <%= render(@page.partial, locals: {page: @page}) %>
+    <%= render(page.partial) %>
     </body>
 </html>
