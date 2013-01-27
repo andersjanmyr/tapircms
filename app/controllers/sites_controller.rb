@@ -5,7 +5,7 @@ class SitesController < ApplicationController
   private
   helper_method :site, :page
   def site
-    @site = Site.new
+    @site = Site.first
   end
 
   def page
