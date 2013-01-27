@@ -30,11 +30,11 @@ describe Page do
   end
 
  context 'partial' do
-   let(:frame) { Frame.new(template: '_default') }
+   let(:frame) { Frame.new(template: 'default') }
 
    it 'returns the frame.template as a partial' do
      page = Page.new(frame: frame)
-     expect(page.partial).to eq('/sites/frames/_default.html')
+     expect(page.partial).to eq('/sites/frames/default.html')
    end
  end
 end

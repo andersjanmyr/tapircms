@@ -9,6 +9,6 @@ class SitesController < ApplicationController
   end
 
   def page
-    @page = Page.new(frame: Frame.new(template: 'default'))
+    @page = Page.first
   end
 end

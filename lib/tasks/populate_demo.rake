@@ -9,7 +9,8 @@ namespace :db do
     frame = Frame.create!(name: 'mainframe', blocks: blocks)
 
     page = Page.create!(title: 'Lorem Landing Page',
-                        description: 'Lorem landing page')
+                        description: 'Lorem landing page',
+                       frame: frame)
     feed = Feed.create!(name: 'A feed')
     frame.blocks.each do |block|
       page.entries << PageEntry.new(block: block, feed: feed)

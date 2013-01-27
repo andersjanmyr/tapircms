@@ -8,7 +8,7 @@ describe Frame do
   end
 
   it 'has a default template' do
-    expect(frame.template).to eq('_default')
+    expect(frame.template).to eq('default')
   end
 
   it 'has many blocks' do
