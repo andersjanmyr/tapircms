@@ -28,6 +28,7 @@ group :development do
   gem 'guard-ctags-bundler'
   gem 'guard-rspec'
   gem 'rails_best_practices'
+  gem 'ruby_gntp'
 end
 
 group :development, :test do

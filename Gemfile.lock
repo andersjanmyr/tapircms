@@ -199,6 +199,7 @@ GEM
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
     ruby-progressbar (1.0.2)
+    ruby_gntp (0.3.4)
     rubyzip (0.9.9)
     sass (3.2.5)
     sass-rails (3.2.6)
@@ -273,6 +274,7 @@ DEPENDENCIES
   rb-fsevent
   rolify
   rspec-rails
+  ruby_gntp
   sass-rails
   sendgrid
   simple_form
