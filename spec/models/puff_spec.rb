@@ -8,6 +8,6 @@ describe Puff do
   end
 
   it 'has a default template' do
-    expect(puff.template).to eq('default')
+    expect(puff.template).to eq('_default')
   end
 end

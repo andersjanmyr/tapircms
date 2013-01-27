@@ -7,8 +7,8 @@ describe Block do
     expect(block.name).to be
   end
 
-  it 'has a name' do
-    expect(block.template).to eq('default')
+  it 'has a default template' do
+    expect(block.template).to eq('_default')
   end
 
   it 'has many blocks' do

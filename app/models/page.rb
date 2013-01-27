@@ -9,4 +9,8 @@ class Page
   def partial
     "/sites/frames/#{frame.template}.html"
   end
+
+  def blocks
+    entries
+  end
 end

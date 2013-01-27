@@ -9,8 +9,9 @@ Tapir::Application.routes.draw do
   resources :page_entries
   resources :articles
 
+  resources :sites
+
   get "home/index"
-  get "sites/index"
 
   root to: 'home#index'
 
