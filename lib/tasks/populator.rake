@@ -13,16 +13,21 @@ namespace :db do
                        frame: frame)
     feed = Feed.create!(name: 'A feed')
     frame.blocks.each do |block|
+      pp block.name, block.puffs
       page.entries << PageEntry.new(block: block, feed: feed)
-      puts block.name
     end
     page.save!
+    page.entries.each do |entry|
+      pp entry.block.name, entry.block.puffs
+    end
   end
 
   def blocks
-    block = Block.create!(name: 'two')
-    block.puffs << Puff.where(name: 'title_and_abstract')
-    block.puffs << Puff.where(name: 'title_and_abstract')
+    block = Block.create!(name: 'two', puffs: [
+      Puff.where(name: 'title_and_abstract').first,
+      Puff.where(name: 'title_and_image').first
+    ])
+
     [
       Block.create!(name: 'top', puffs: Puff.where(name: 'title')),
       Block.create!(name: 'main', puffs: Puff.where(name: 'title_and_image')),
