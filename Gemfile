@@ -5,16 +5,24 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'teabag'
+  gem 'bourbon'
+  gem 'neat'
 end
 
-gem 'jquery-rails'
+# Servers
 gem 'unicorn'
 gem 'mongoid'
 gem 'sendgrid'
+
+# View
+gem 'simple_form'
+gem 'jquery-rails'
+
+# Authentication and authorization
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
-gem 'simple_form'
+
 gem 'figaro'
 gem 'inherited_resources'
 gem 'acts_as_list_mongoid'

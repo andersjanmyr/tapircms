@@ -1,6 +1,8 @@
-// Place all the styles related to the feeds controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bourbon";
+@import "neat";
+
+$visual-grid: true;
+
 .frame {
 
 }
@@ -8,13 +10,21 @@
 }
 
 .block {
-  clear: both;
+  @include outer-container;
 }
 
+.block .one {
+  @include span-columns(12);
+}
 
-.puff {
-  float: left;
-  margin: 20px;
-  width: 100px;
-  height: 100px;
+.block .two {
+  @include span-columns(6);
+}
+
+.block .three {
+  @include span-columns(4);
+}
+
+.block .top {
+  @include span-columns(12);
 }
