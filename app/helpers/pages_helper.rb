@@ -12,8 +12,9 @@ module PagesHelper
 
 
   def render_puffs puffs, feed
-    safe_join(puffs.map do |puff|
-      render_puff puff, Article.new(title: 'Hello', abstract: 'World')
+    articles = feed.articles
+    safe_join(puffs.zip(articles).map do |puff, article|
+      render_puff puff, article
     end)
   end
 

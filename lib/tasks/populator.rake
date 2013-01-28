@@ -11,7 +11,7 @@ namespace :db do
     page = Page.create!(title: 'Lorem Landing Page',
                         description: 'Lorem landing page',
                        frame: frame)
-    feed = Feed.create!(name: 'A feed')
+    feed = Feeds::TapirFeed.create!()
     frame.blocks.each do |block|
       pp block.name, block.puffs
       page.entries << PageEntry.new(block: block, feed: feed)
