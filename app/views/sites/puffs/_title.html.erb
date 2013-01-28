@@ -1,0 +1,9 @@
+<div class='puff <%= puff.name %>'>
+  <h1><%= article.title %></h1>
+  <div><%= article.abstract %></div>
+  <div>
+    <% article.images.each do |image| %>
+      <%= image_tag image  %>
+    <% end %>
+</div>
+</div>
