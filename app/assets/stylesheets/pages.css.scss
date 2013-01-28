@@ -33,6 +33,10 @@ $visual-grid: true;
 
 .one_big_and_two_small > div {
   @include span-columns(6);
+
+  &.big img {
+    height: 280px;
+  }
 }
 
 .top > .title {
