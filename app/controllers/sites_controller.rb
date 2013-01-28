@@ -1,4 +1,6 @@
 class SitesController < ApplicationController
+  layout false
+
   def index
   end
 
