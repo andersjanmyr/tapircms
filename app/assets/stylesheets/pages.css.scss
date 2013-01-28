@@ -8,11 +8,14 @@
 }
 
 .block {
-  float: left;
+}
+
+.block:after {
+  clear: both;
 }
 
 .puff {
-  display: inline-block;
+  float: left;
   width: 100px;
   height: 100px;
 }
