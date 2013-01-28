@@ -12,12 +12,12 @@ describe Site do
       expect(site.description).to be_nil
     end
 
-    it 'has a stylesheet called name' do
-      expect(site.stylesheet).to eq('Site')
+    it 'has a stylesheet called application' do
+      expect(site.stylesheet).to eq('application')
     end
 
-    it 'has a javascript called name' do
-      expect(site.javascript).to eq('Site')
+    it 'has a javascript called application' do
+      expect(site.javascript).to eq('application')
     end
 
     it 'has no theme' do
