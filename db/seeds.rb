@@ -36,7 +36,7 @@ def create_blocks
                         title_and_image title_and_image title_and_image ))
 
   block = Block.create!(name: 'three', puff_names: %w(title_and_image
-                        title_and_image title_and_image title_and_image ))
+                        title_and_image title_and_image ))
   pp block.puffs
 
   block = Block.create!(name: 'one_big_and_two_small', template: 'one_big_and_two_small',

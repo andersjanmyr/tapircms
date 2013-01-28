@@ -1,3 +1,9 @@
 <div class="block <%=block.name%>">
-  <%= render_puffs(block.puffs, feed) %>
+  <div class="two">
+    <%= render_puff(block.puffs[0], feed.articles[0]) %>
+  </div>
+  <div class="two">
+    <%= render_puff(block.puffs[1], feed.articles[1]) %>
+    <%= render_puff(block.puffs[2], feed.articles[2]) %>
+  </div>
 </div>

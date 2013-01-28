@@ -26,6 +26,9 @@ $visual-grid: true;
 .three .puff {
   @include span-columns(4);
 }
+.four .puff {
+  @include span-columns(3);
+}
 
 .top .puff {
   @include span-columns(12);
