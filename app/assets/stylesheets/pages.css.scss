@@ -15,22 +15,31 @@ $visual-grid: true;
   @include outer-container;
 }
 
-.one .puff {
+.one > .puff {
   @include span-columns(12);
 }
 
-.two .puff {
+.two > .puff {
   @include span-columns(6);
 }
 
-.three .puff {
+.three > .puff {
   @include span-columns(4);
 }
 
-.four .puff {
+.four > .puff {
   @include span-columns(3);
 }
 
-.top .puff {
+.one_big_and_two_small > div {
+  @include span-columns(6);
+}
+
+.top > .title {
   @include span-columns(12);
+  h1 {
+    font-family: impact;
+    font-size: 72pt;
+    text-align: center;
+  }
 }
