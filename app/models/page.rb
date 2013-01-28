@@ -14,7 +14,6 @@ class Page
     entries.map do |block_name, feed_name|
       block = Block.where(name: block_name).first
       feed = Feed.where(name: feed_name).first
-      pp block.name, feed.name
       PageEntry.new(block, feed)
     end
   end
