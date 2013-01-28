@@ -3,7 +3,7 @@ class Block
   field :name, type: String
   field :template, type: String, default: 'default'
   belongs_to :frame
-  has_many :puffs
+  has_and_belongs_to_many :puffs
 
   def partial
     "/sites/blocks/#{template}"
