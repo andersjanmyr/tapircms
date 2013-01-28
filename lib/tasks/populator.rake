@@ -6,7 +6,7 @@ namespace :db do
 
     Site.create!(name: 'Tapir CMS', description: 'Tapir CMS Demo Site', theme: 'blue')
     frame = Frame.first
-    feed = Feeds::TapirFeed.create!()
+    feed = Feeds::TapirFeed.create!(name: 'tapir')
     page = Page.create!(title: 'Tapir CMS',
                         description: 'Tapir CMS Landing Page',
                         frame: frame)

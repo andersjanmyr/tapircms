@@ -1,2 +1,2 @@
-class PageEntry < Struct.new(:block_name, :feed_name)
+class PageEntry < Struct.new(:block, :feed)
 end

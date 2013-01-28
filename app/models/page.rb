@@ -11,11 +11,11 @@ class Page
   end
 
   def blocks
-    entries.map do |entry|
-      PageEntry.new(
-        Block.where(name: entry.block_name),
-        Feed.where(name: entry.feed_name)
-      )
+    entries.map do |pair|
+      block = Block.where(name: pair['block_name']).first
+      feed = Feed.where(name: pair['feed_name']).first
+      pp pair, block.name, feed.name
+      PageEntry.new(block, feed)
     end
   end
 

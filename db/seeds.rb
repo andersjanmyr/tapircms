@@ -32,7 +32,7 @@ end
 def create_blocks
   Block.create!(name: 'top', puff_names: %w(title))
   Block.create!(name: 'main', puff_names: %w(title_image_and_abstract))
-  block = Block.create!(name: 'four', puffs_names: %w(title_and_image
+  block = Block.create!(name: 'four', puff_names: %w(title_and_image
                         title_and_image title_and_image title_and_image ))
 
   block = Block.create!(name: 'three', puff_names: %w(title_and_image
@@ -45,7 +45,7 @@ def create_blocks
 end
 
 def create_frames
-  frame = Frame.create!(name: 'mainframe', blocks: Block.all.map(&:name))
+  frame = Frame.create!(name: 'mainframe', block_names: Block.all.map(&:name))
   puts frame
 end
 
