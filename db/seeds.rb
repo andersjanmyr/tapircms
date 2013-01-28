@@ -30,31 +30,22 @@ def create_puffs
 end
 
 def create_blocks
-  Block.create!(name: 'top', puffs: Puff.where(name: 'title'))
-  Block.create!(name: 'main', puffs: Puff.where(name: 'title_image_and_abstract'))
-  Block.create!(name: 'four', puffs: [
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first
-  ])
-  Block.create!(name: 'three', puffs: [
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first
-  ])
-  Block.create!(name: 'one_big_and_two_small', template: 'one_big_and_two_small', puffs: [
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first,
-    Puff.where(name: 'title_and_image').first
-  ])
-  Block.create!(name: 'article', puffs: [
-    Puff.where(name: 'title_image_and_content').first
-  ])
+  Block.create!(name: 'top', puff_names: %w(title))
+  Block.create!(name: 'main', puff_names: %w(title_image_and_abstract))
+  block = Block.create!(name: 'four', puffs_names: %w(title_and_image
+                        title_and_image title_and_image title_and_image ))
+
+  block = Block.create!(name: 'three', puff_names: %w(title_and_image
+                        title_and_image title_and_image title_and_image ))
+  pp block.puffs
+
+  block = Block.create!(name: 'one_big_and_two_small', template: 'one_big_and_two_small',
+                        puff_names: %w(title_and_image title_and_image title_and_image))
+  Block.create!(name: 'article', puff_names: %w(title_image_and_content))
 end
 
 def create_frames
-  frame = Frame.create!(name: 'mainframe', blocks: Block.all)
+  frame = Frame.create!(name: 'mainframe', blocks: Block.all.map(&:name))
   puts frame
 end
 

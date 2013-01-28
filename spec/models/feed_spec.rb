@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Feed do
-  let(:feed) { Fabricate.build(:feed) }
+  let(:feed) { Feed.create!(name: 'feed', uri: 'uri') }
 
   it 'has a name' do
     expect(feed.name).to be

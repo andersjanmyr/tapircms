@@ -1,7 +1,14 @@
 require 'spec_helper'
 
 describe Article do
-  let(:article) { Fabricate.build(:article) }
+  let(:article) { Article.create!(
+    title: 'title',
+    abstract: 'abstract',
+    content: 'content',
+    uri: 'uri',
+    source: 'source',
+    images: %w(/images/a.png b.png))
+  }
 
   it 'has a title' do
     expect(article.title).to be

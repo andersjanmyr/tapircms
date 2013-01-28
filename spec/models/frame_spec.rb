@@ -1,10 +1,13 @@
 require 'spec_helper'
 
 describe Frame do
-  let(:frame) { Fabricate.build(:frame) }
+  before do
+    Block.create!(name: 'hello')
+  end
+  let(:frame) { Frame.create!(name: 'frame', block_names: %w(hello)) }
 
   it 'has a name' do
-    expect(frame.name).to be
+    expect(frame.name).to eq('frame')
   end
 
   it 'has a default template' do
@@ -12,6 +15,6 @@ describe Frame do
   end
 
   it 'has many blocks' do
-    expect(frame.blocks).to have(2).items
+    expect(frame.blocks).to have(1).item
   end
 end

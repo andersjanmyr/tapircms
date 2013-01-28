@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Puff do
-  let(:puff) { Fabricate.build(:puff) }
+  let(:puff) { Puff.create!(name: 'puff') }
 
   it 'has a name' do
     expect(puff.name).to be

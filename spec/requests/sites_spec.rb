@@ -6,7 +6,7 @@ describe "Sites" do
   end
 
   let!(:frame) do
-    Fabricate(:frame, name: 'Tapir', description: 'Tapir Desc')
+    Frame.create!(name: 'Tapir', description: 'Tapir Desc')
   end
 
   let!(:page) do

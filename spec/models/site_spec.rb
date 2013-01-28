@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Site do
-  let(:site) { Fabricate.build(:site, name: 'Site') }
+  let(:site) { Site.create!(name: 'Site') }
 
   describe 'default' do
     it 'has a name' do

@@ -2,10 +2,13 @@ class Block
   include Mongoid::Document
   field :name, type: String
   field :template, type: String, default: 'default'
-  belongs_to :frame
-  has_and_belongs_to_many :puffs
+  field :puff_names, type: Array, default: []
 
   def partial
     "/sites/blocks/#{template}"
+  end
+
+  def puffs
+    puff_names.map { |name| Puff.where(name: name).first }
   end
 end

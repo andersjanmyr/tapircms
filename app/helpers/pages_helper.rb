@@ -6,7 +6,6 @@ module PagesHelper
   end
 
   def render_block entry
-    puts entry
     render partial: entry.block.partial, locals: {block: entry.block, feed: entry.feed}
   end
 
@@ -19,7 +18,6 @@ module PagesHelper
   end
 
   def render_puff puff, article
-    puts puff
     render partial: puff.partial, locals: {puff: puff, article: article}
   end
 

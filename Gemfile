@@ -42,7 +42,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'fabrication'
 end
 
 group :test do

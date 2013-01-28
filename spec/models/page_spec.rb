@@ -3,7 +3,11 @@ require 'spec_helper'
 describe Page do
 
   context 'default' do
-    let(:page) { Fabricate.build(:page) }
+    before do
+      Frame.create!(name: 'frame')
+    end
+
+    let(:page) { Page.create!(title: 'page', frame: Frame.where(name: 'frame').first) }
 
     it 'has a title' do
       expect(page.title).to be
@@ -14,17 +18,17 @@ describe Page do
     end
 
     it 'has a slug' do
-      expect(page.slug).to be
+      expect(page.slug).to be_nil
     end
 
     it 'has one frame' do
-      page.frame = Fabricate.build(:frame)
       expect(page.frame).to be
     end
 
     it 'has many entries' do
-      page.entries << Fabricate.build(:page_entry)
-      page.entries << Fabricate.build(:page_entry)
+      page.add_entry('block', 'feed')
+      page.add_entry('block', 'feed')
+      page.save!
       expect(page.entries).to have(2).items
     end
   end
