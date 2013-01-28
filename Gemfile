@@ -29,6 +29,7 @@ group :development do
   gem 'guard-rspec'
   gem 'rails_best_practices'
   gem 'ruby_gntp'
+  gem 'heroku'
 end
 
 group :development, :test do
