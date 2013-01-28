@@ -14,18 +14,18 @@ $visual-grid: true;
   @include outer-container;
 }
 
-.block .one {
+.one .puff {
   @include span-columns(12);
 }
 
-.block .two {
+.two .puff {
   @include span-columns(6);
 }
 
-.block .three {
+.three .puff {
   @include span-columns(4);
 }
 
-.block .top {
+.top .puff {
   @include span-columns(12);
 }
