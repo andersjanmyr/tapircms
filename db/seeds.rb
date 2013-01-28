@@ -1,3 +1,5 @@
+require 'pp'
+
 def main
   create_roles
   create_users

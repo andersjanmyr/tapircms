@@ -1,3 +1,4 @@
+require 'pp'
 namespace :db do
   desc "Erase and fill database"
 
