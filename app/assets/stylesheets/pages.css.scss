@@ -1,7 +1,8 @@
 @import "bourbon";
+$visual-grid: true;
+@import "neat-helpers";
 @import "neat";
 
-$visual-grid: true;
 
 .frame {
 
