@@ -4,12 +4,12 @@ namespace :db do
   task :populate => :environment do
     [Site, Frame, Block, Puff, Page, Article].each(&:delete_all)
 
-    Site.create!(name: 'Lorem', description: 'Lorem Demo Site', theme: 'blue')
+    Site.create!(name: 'Tapir CMS', description: 'Tapir CMS Demo Site', theme: 'blue')
     create_puffs
     frame = Frame.create!(name: 'mainframe', blocks: blocks)
 
-    page = Page.create!(title: 'Lorem Landing Page',
-                        description: 'Lorem landing page',
+    page = Page.create!(title: 'Tapir CMS',
+                        description: 'Tapir CMS Landing Page',
                        frame: frame)
     feed = Feeds::TapirFeed.create!()
     frame.blocks.each do |block|
