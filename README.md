@@ -13,7 +13,7 @@ reference to a `Block` and a `Feed`.
 
 The `Feed` serves `Article`s that is laid out in the `Puff`s.
 
-![Architecture](https://raw.github.comandersjanmyr/tapircms/master/doc/images/architecture.png)
+![Architecture](https://raw.github.com/andersjanmyr/tapircms/master/docs/images/achitecture.png)
 
 ### Articles
 
