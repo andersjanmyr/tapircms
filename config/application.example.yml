@@ -9,7 +9,7 @@
 #
 SENDGRID_USERNAME: Your_Username
 SENDGRID_PASSWORD: Your_Password
-ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
-ROLES: [admin, user, VIP]
+ADMIN_NAME: admin
+ADMIN_EMAIL: your@email.com
+ADMIN_PASSWORD: schabraktapir
+ROLES: [admin, site_admin, user, guest]
