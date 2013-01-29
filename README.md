@@ -27,4 +27,10 @@ A `Feed` is responsible for providing a list of article URIs. The `Article`
 subclasses know how to convert a URI into an `Article` that can be displayed by
 the puffs.
 
+
+## Installation
+
+* Install Ruby 1.9.3 [with RVM](https://rvm.io/rvm/install/) or with Brew `brew install ruby`
+* Install Mongodb `brew install mongodb`
+
 ## Contributing
