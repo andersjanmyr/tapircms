@@ -32,5 +32,7 @@ the puffs.
 
 * Install Ruby 1.9.3 [with RVM](https://rvm.io/rvm/install/) or with Brew `brew install ruby`
 * Install Mongodb `brew install mongodb`
+* `bundle install`
+
 
 ## Contributing
